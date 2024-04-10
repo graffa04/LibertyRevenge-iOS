@@ -24,8 +24,6 @@ public class NewBehaviourScript : MonoBehaviour
         float randomY = Random.Range(minStopPosition.y, maxStopPosition.y);
 
         stopPosition = new Vector3(randomX, randomY, transform.position.z);
-
-        audioSource = GetComponent<AudioSource>();    
     }
     void Update()
     {
@@ -66,6 +64,5 @@ public class NewBehaviourScript : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
-        audioSource.Play();
     }
 }
