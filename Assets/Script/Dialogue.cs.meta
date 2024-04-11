@@ -3,7 +3,18 @@ guid: 4813fff512f0a4db3a737f4455a348d3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TextComponent: {instanceID: 0}
+  - actionButton: {instanceID: 0}
+  - PlayerFire: {instanceID: 0}
+  - PlayerShield: {instanceID: 0}
+  - Panel: {instanceID: 0}
+  - Panel2: {instanceID: 0}
+  - Panel3: {instanceID: 0}
+  - JoeBiden: {instanceID: 0}
+  - Balloon: {instanceID: 0}
+  - JoeBiden1: {fileID: 2867278615980606339, guid: 87e4d691bc2504626873f85ae65ab576, type: 3}
+  - Balloon1: {fileID: 2867278615980606339, guid: 87e4d691bc2504626873f85ae65ab576, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
