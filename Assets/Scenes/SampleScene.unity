@@ -965,6 +965,8 @@ MonoBehaviour:
   maxY: 1
   minY: 1
   timeBetweenSpawn: 8
+  minTimeBetweenSpawn: 2
+  spawnTimeDecrement: 1
 --- !u!1 &872670172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,6 +2222,8 @@ MonoBehaviour:
   maxY: 0
   minY: 0
   timeBetweenSpawn: 20
+  minTimeBetweenSpawn: 2
+  spawnTimeDecrement: 0.1
 --- !u!1 &1602586127
 GameObject:
   m_ObjectHideFlags: 0
