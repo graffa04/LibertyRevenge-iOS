@@ -7,15 +7,22 @@ using UnityEngine.EventSystems;
 
 public class PlayerProjectile : MonoBehaviour
 {
-
+    [SerializeField] private AudioClip FireSoundClip;
+    private AudioSource audioSource;
     public Projectile ProjectilePrefab;
     public Transform LaunchOffSet;
     public Button PlayerFire;
 
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && IsMouseOverButton())
         {
+            audioSource.clip = FireSoundClip;
+            audioSource.Play();
             Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition.z = 0f; 
 
